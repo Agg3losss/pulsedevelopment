@@ -1,43 +1,30 @@
-// File: js/webhook.js
-
-document.getElementById("supportForm").addEventListener("submit", function (e) {
+<!-- webhook.js -->
+document.getElementById("supportForm").addEventListener("submit", e => {
   e.preventDefault();
-
   const discord = document.getElementById("discord").value;
-  const topic = document.getElementById("topic").value;
   const description = document.getElementById("description").value;
-
-  const webhookURL = "https://discord.com/api/webhooks/XXX/YYY"; // Replace with your webhook
-
+  const url = "https://discord.com/api/webhooks/1396487624797196359/57kGIGmciyozFuEt9OoMJz4vJym6HtmX0jzsw2JlNH4uxJuI6Zwf48_1xfuPEu3rnb7v";
   const payload = {
-    embeds: [
-      {
-        title: "📩 New Support Request",
-        color: 16711680,
-        fields: [
-          { name: "Discord", value: discord },
-          { name: "Topic", value: topic },
-          { name: "Description", value: description },
-        ],
-        footer: {
-          text: "Pulse Development",
-        },
-        timestamp: new Date().toISOString(),
-      },
-    ],
+    embeds: [{
+      title: "📩 New Support Request",
+      color: 16711680,
+      fields: [
+        { name: "Discord", value: discord },
+        { name: "Description", value: description }
+      ],
+      footer: { text: "Pulse Development" },
+      timestamp: new Date().toISOString()
+    }]
   };
-
-  fetch(webhookURL, {
+  fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  })
-    .then(() => {
-      alert("Support request sent!");
-      document.getElementById("supportForm").reset();
-    })
-    .catch((err) => {
-      alert("Error sending support request.");
-      console.error(err);
-    });
+    body: JSON.stringify(payload)
+  }).then(() => {
+    alert("Submitted!");
+    document.getElementById("supportForm").reset();
+  }).catch(err => {
+    alert("Error sending.");
+    console.error(err);
+  });
 });
