@@ -1,9 +1,9 @@
 <!-- auth.js -->
 const validCode = "PulseCode2025";
 function checkCode() {
-  const code = document.getElementById("codeInput").value;
+  const input = document.getElementById("codeInput").value;
   const error = document.getElementById("error");
-  if (code === validCode) {
+  if (input === validCode) {
     sessionStorage.setItem("admin", "true");
     window.location.href = "dashboard.html";
   } else {
