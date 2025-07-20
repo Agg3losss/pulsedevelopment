@@ -1,16 +1,18 @@
 <!-- support.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8" /><title>Support</title>
-  <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8">
+  <title>Support</title>
+  <link rel="stylesheet" href="style.css">
   <script defer src="webhook.js"></script>
 </head>
-<body class="main">
-  <form id="supportForm" class="form">
-    <h2>Support Request</h2>
-    <input type="text" id="discord" placeholder="Discord Username" required />
-    <textarea id="description" rows="5" placeholder="Describe your request..." required></textarea>
-    <button type="submit" class="btn">Submit</button>
+<body class="main-section">
+  <h2>Support Request</h2>
+  <form id="supportForm">
+    <input type="text" id="discord" placeholder="Your Discord Username" required />
+    <textarea id="description" placeholder="Describe your issue..." required></textarea>
+    <button type="submit" class="cta-btn">Submit</button>
   </form>
 </body>
 </html>
