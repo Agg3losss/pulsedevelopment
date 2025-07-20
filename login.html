@@ -1,0 +1,23 @@
+<!-- File: login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/auth.js"></script>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="p-8 bg-white shadow-md rounded-md text-center w-full max-w-sm">
+      <h2 class="text-2xl font-bold mb-4">Admin Access</h2>
+      <input
+        type="password"
+        id="codeInput"
+        placeholder="Enter Admin Code"
+        class="border p-2 w-full rounded mb-4"
+      />
+      <button onclick="checkCode()" class="btn-glow w-full">Login</button>
+      <p id="error" class="text-red-600 text-sm mt-4 hidden">Incorrect code!</p>
+    </div>
+  </body>
+</html>
