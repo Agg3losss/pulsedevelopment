@@ -1,7 +1,5 @@
-// File: js/auth.js
-
+<!-- auth.js -->
 const validCode = "PulseCode2025";
-
 function checkCode() {
   const code = document.getElementById("codeInput").value;
   const error = document.getElementById("error");
@@ -12,10 +10,6 @@ function checkCode() {
     error.classList.remove("hidden");
   }
 }
-
-// Redirect if not logged in
-if (window.location.pathname.includes("dashboard.html")) {
-  if (sessionStorage.getItem("admin") !== "true") {
-    window.location.href = "login.html";
-  }
+if (window.location.pathname.includes("dashboard.html") && sessionStorage.getItem("admin") !== "true") {
+  window.location.href = "login.html";
 }
