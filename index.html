@@ -1,68 +1,43 @@
-<!-- File: index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pulse Development</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/main.js"></script>
-    <link rel="icon" href="assets/logo.png" />
-  </head>
-  <body class="bg-white text-gray-900 font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pulse Development</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <link rel="icon" href="logo.png" />
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="fixed w-full bg-white shadow py-4 px-6 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <img src="logo.png" class="h-8" alt="Logo" />
+      <span class="text-xl font-bold text-red-600">Pulse</span>
+    </div>
+    <nav class="space-x-6 hidden md:flex">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="roblox.html" class="nav-link">Roblox</a>
+      <a href="discord.html" class="nav-link">Discord</a>
+      <a href="bots.html" class="nav-link">Bots</a>
+      <a href="exchanges.html" class="nav-link">Exchanges</a>
+      <a href="support.html" class="nav-link">Support</a>
+      <a href="login.html" class="btn-primary">Admin</a>
+    </nav>
+  </header>
 
-    <!-- Navbar -->
-    <header class="w-full fixed top-0 bg-white shadow-md z-50">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-          <img src="assets/logo.png" class="h-8" alt="Logo" />
-          <span class="text-xl font-bold text-red-600">Pulse</span>
-        </div>
-        <nav class="space-x-6 hidden md:flex text-sm font-medium">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="roblox.html" class="nav-link">Roblox</a>
-          <a href="discord.html" class="nav-link">Discord</a>
-          <a href="bots.html" class="nav-link">Bots</a>
-          <a href="exchanges.html" class="nav-link">Exchanges</a>
-          <a href="support.html" class="nav-link">Support</a>
-          <a href="login.html" class="btn-primary">Admin</a>
-        </nav>
-      </div>
-    </header>
+  <section class="h-screen flex flex-col items-center justify-center text-center pt-24 bg-gradient-to-br from-white to-gray-100 px-4">
+    <h1 class="text-6xl md:text-8xl font-extrabold">PULSE DEVELOPMENT</h1>
+    <p class="mt-6 text-gray-600 max-w-xl">Advanced services for Roblox, Discord, Web automation & secure exchanges.</p>
+    <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-gray-700">
+      <div><div class="text-xl font-bold text-black">10+</div>Years Experience</div>
+      <div><div class="text-xl font-bold text-black">150+</div>Projects</div>
+      <div><div class="text-xl font-bold text-black">50+</div>Clients</div>
+      <div><div class="text-xl font-bold text-black">12</div>Awards</div>
+    </div>
+    <a href="support.html" class="mt-10 btn-glow">Get Support →</a>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-white to-gray-100 pt-24 px-4">
-      <h1 class="text-6xl md:text-8xl font-extrabold text-black">PULSE DEVELOPMENT</h1>
-      <p class="mt-6 text-gray-600 max-w-xl">Building advanced services for platforms like Roblox, Discord, Web automation & secure exchanges.</p>
-      
-      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-sm text-gray-700">
-        <div>
-          <div class="text-black text-xl font-bold">10+</div>
-          Years Experience
-        </div>
-        <div>
-          <div class="text-black text-xl font-bold">150+</div>
-          Projects
-        </div>
-        <div>
-          <div class="text-black text-xl font-bold">50+</div>
-          Clients
-        </div>
-        <div>
-          <div class="text-black text-xl font-bold">12</div>
-          Awards
-        </div>
-      </div>
-
-      <a href="support.html" class="mt-10 btn-glow">
-        Get Support →
-      </a>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white text-center py-6">
-      <p>© 2025 Pulse Development. All rights reserved.</p>
-    </footer>
-
-  </body>
+  <footer class="bg-black text-white text-center py-6">
+    <p>© 2025 Pulse Development. All rights reserved.</p>
+  </footer>
+</body>
 </html>
